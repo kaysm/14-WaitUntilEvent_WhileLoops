@@ -9,10 +9,10 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 
 def main():
     """ TESTs the functions in this module (by calling them). """
-    double_a_float()
-    print_an_integer_many_times()
-    print_an_integer_many_times_on_one_row()
-    input_it_all()
+    # double_a_float()
+    # print_an_integer_many_times()
+    # print_an_integer_many_times_on_one_row()
+    # input_it_all()
 
 
 def double_a_float():
@@ -31,9 +31,11 @@ def double_a_float():
          -6.28
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
+    f = float(input('Enter a number:'))
+    print(f*2)
 
 
 def print_an_integer_many_times():
@@ -62,9 +64,12 @@ def print_an_integer_many_times():
          10
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
+    f = int(input('Enter a number:'))
+    for k in range(f):
+        print(f*2)
 
 
 def print_an_integer_many_times_on_one_row():
@@ -81,12 +86,17 @@ def print_an_integer_many_times_on_one_row():
          1010101010
     """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #   The testing code is already written for you (above).
     #
     # HINT: One way to print on a SINGLE line is to build up a string
     #       and then print that (single) string.
     # -------------------------------------------------------------------------
+    f = int(input('Enter a number:'))
+    stri = ''
+    for k in range(f):
+        stri = stri + str(f*2)
+    print(stri)
 
 
 def input_it_all():
@@ -121,9 +131,16 @@ def input_it_all():
          Peace & Love.
     """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
+    f = float(input('Enter a float:'))**.5
+    g = int(input('Enter a number:'))
+    h = str(input('Enter text:'))
+    for k in range(g):
+        print(f)
+    for k in range(g):
+        print(h)
 
 
 # -----------------------------------------------------------------------------
